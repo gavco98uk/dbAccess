@@ -26,7 +26,7 @@ I have decided to release this project under the MIT license. I hope it is of us
     }
 
     // for insert, update or delete commands, we use performNonSELECT
-   result.performNonSELECT("INSERT INTO Customers (Name,Balance) VALUES ('Me',1000000)");
+    result.performNonSELECT("INSERT INTO Customers (Name,Balance) VALUES ('Me',1000000)");
 
     // this returns the number of records affected, so you can check if it worked or not
     var count = result.performNonSELECT("DELETE FROM Customers WHERE Name = 'Dave'");
